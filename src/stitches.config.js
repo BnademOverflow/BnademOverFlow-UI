@@ -20,7 +20,8 @@ export const {styled, css} = createStyled({
             $primal_grey: "#D9D9D9",
             $primal_darkgreen: "#27AE60",
             $translucent_white: "rgba(248, 248, 248, 0.6)",
-            $primal_white: "#FFFFFF"
+            $primal_white: "#FFFFFF",
+            $primary_color_dark: "#68D594",
         },
         fonts:
         {

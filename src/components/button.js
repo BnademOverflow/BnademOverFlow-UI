@@ -13,7 +13,11 @@ const ButtonStyle = styled('button', {
 	padding: "10px 20px 10px 20px",
 	width: "auto",
 	minWidth: "100px",
+	transition: "background-color 0.05s ease-in-out",
 	':hover': {
+		backgroundColor: "$primary_color_dark"
+	},
+	':active': {
 		backgroundColor: "$primal_darkgreen"
 	}
 })
