@@ -4,8 +4,9 @@
   "description": "A react UI library for l9wada projects",
   "main": "index.js",
   "scripts": {
-    "start": "styleguidist server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -23,12 +24,14 @@
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.12.13",
     "@stitches/react": "0.0.2",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/react": "^6.1.21",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-styleguidist": "^11.1.5",
-    "webpack": "^5.26.3"
-  },
-  "dependencies": {}
+    "webpack": "^4.44.0"
+  }
 }
