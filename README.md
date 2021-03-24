@@ -1,5 +1,5 @@
-# l9wada-UI
-A react UI library for l9wada projects
+# BnademOverFlow-UI
+A react UI library for BnademOverFlow projects
 ## How to contribute:
 1. Clone this repo (or fork it if you are not part of the organisation)
 2. Create a new branch with a name describing the component or task you are working on
