@@ -1,27 +1,50 @@
 import React from "react";
+
 import { styled } from "../stitches.config";
 
 const ButtonStyle = styled("button", {
-  backgroundColor: "$primary",
+  backgroundColor: "transparent",
   borderRadius: "10px",
-  border: "0px",
-  color: "$primal_white",
+  border: "none",
   fontFamily: "$primary",
   fontWeight: "bold",
-  height: "40px",
-  outline: "0px",
-  padding: "10px 20px 10px 20px",
+  outline: "none",
   width: "auto",
-  minWidth: "100px",
   transition: "background-color 0.05s ease-in-out",
-  ":hover": {
-    backgroundColor: "$primary_color_dark",
-  },
-  ":active": {
-    backgroundColor: "$primal_darkgreen",
+  cursor: "pointer",
+
+  variants: {
+    color: {
+      primary: {
+        backgroundColor: "$primary",
+        color: "$primal_white",
+
+        ":hover": {
+          backgroundColor: "$primary_color_dark",
+        },
+        ":active": {
+          backgroundColor: "$primal_darkgreen",
+        },
+      },
+    },
+
+    size: {
+      normal: {
+        height: "40px",
+        width: "79px",
+      },
+      small: {
+        height: "32px",
+        width: "72px",
+      },
+    },
   },
 });
 
-export const Button = ({ label }) => {
-  return <ButtonStyle>{label}</ButtonStyle>;
+export const Button = ({ label, color, size }) => {
+  return (
+    <ButtonStyle color={color} size={size}>
+      {label}
+    </ButtonStyle>
+  );
 };
