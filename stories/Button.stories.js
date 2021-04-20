@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { Button } from '../src/components/Button';
+import { Button } from "../src/components/Button";
 
 export default {
-  title: 'Button',
+  title: "Button",
   component: Button,
-  argTypes: {}
+  argTypes: {},
 };
 
 const Template = (args) => <Button {...args} />;
