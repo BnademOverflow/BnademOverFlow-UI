@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "@storybook/react": "^6.1.21",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.2.2",
+    "prettier": "2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "webpack": "^4.44.0"
