@@ -10,8 +10,15 @@ const ButtonStyle = styled("button", {
   fontWeight: "bold",
   outline: "none",
   width: "auto",
-  transition: "background-color 0.05s ease-in-out",
+  transition: "all 0.05s ease-in-out",
   cursor: "pointer",
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  whiteSpace: "nowrap",
+  verticalAlign: "middle",
+
+  [`& ${Icon}`]: {},
 
   variants: {
     color: {
@@ -30,21 +37,27 @@ const ButtonStyle = styled("button", {
 
     size: {
       normal: {
-        height: "40px",
-        width: "79px",
+        padding: "11px 13px",
       },
       small: {
-        height: "32px",
-        width: "72px",
+        padding: "9px 11px",
       },
     },
   },
 });
 
-export const Button = ({ label, color, size }) => {
+const Icon = styled("span", {
+  display: "inline-flex",
+});
+
+export const Button = ({ children, color, size, rightIcon, leftIcon }) => {
   return (
     <ButtonStyle color={color} size={size}>
-      {label}
+      {leftIcon && <Icon css={{ marginRight: "3px" }}>{leftIcon}</Icon>}
+
+      {children}
+
+      {rightIcon && <Icon css={{ marginLeft: "3px" }}>{rightIcon}</Icon>}
     </ButtonStyle>
   );
 };
