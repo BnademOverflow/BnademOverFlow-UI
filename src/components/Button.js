@@ -2,6 +2,10 @@ import React from "react";
 
 import { styled } from "../stitches.config";
 
+const Icon = styled("span", {
+  display: "inline-flex",
+});
+
 const ButtonStyle = styled("button", {
   backgroundColor: "transparent",
   borderRadius: "10px",
@@ -46,18 +50,14 @@ const ButtonStyle = styled("button", {
   },
 });
 
-const Icon = styled("span", {
-  display: "inline-flex",
-});
-
 export const Button = ({ children, color, size, rightIcon, leftIcon }) => {
   return (
     <ButtonStyle color={color} size={size}>
-      {leftIcon && <Icon css={{ marginRight: "3px" }}>{leftIcon}</Icon>}
+      {leftIcon && <Icon>{leftIcon}</Icon>}
 
       {children}
 
-      {rightIcon && <Icon css={{ marginLeft: "3px" }}>{rightIcon}</Icon>}
+      {rightIcon && <Icon>{rightIcon}</Icon>}
     </ButtonStyle>
   );
 };
