@@ -37,6 +37,18 @@ const ButtonStyle = styled("button", {
           backgroundColor: "$primal_darkgreen",
         },
       },
+
+      danger: {
+        backgroundColor: "$invalid_red",
+        color: "$primal_white",
+
+        ":hover": {
+          backgroundColor: "$primal_pink",
+        },
+        ":active": {
+          backgroundColor: "#f3a2b1",
+        },
+      },
     },
 
     size: {
