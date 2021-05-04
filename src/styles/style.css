@@ -1,15 +1,15 @@
-@font-face{
-    font-family: "MPLUSRounded1c";
-    src: url(./M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf);
-    font-weight: normal;
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url(./M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf);
+  font-weight: normal;
 }
-@font-face{
-    font-family: "MPLUSRounded1c";
-    src: url(./M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf);
-    font-weight: bold;
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url(./M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf);
+  font-weight: bold;
 }
-@font-face{
-    font-family: "MPLUSRounded1c";
-    src: url(./M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf);
-    font-weight: lighter;
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url(./M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf);
+  font-weight: lighter;
 }
