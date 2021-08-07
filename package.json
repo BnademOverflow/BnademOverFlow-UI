@@ -24,7 +24,7 @@
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.14.5",
-    "@stitches/react": "^0.0.2",
+    "@stitches/react": "^0.2.4",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.3.6",
