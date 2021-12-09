@@ -28,7 +28,7 @@
     "@storybook/addon-actions": "^6.3.8",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.3.8",
-    "@storybook/react": "^6.1.21",
+    "@storybook/react": "^6.4.9",
     "autoprefixer": "^10.3.4",
     "babel-loader": "^8.2.2",
     "prettier": "2.3.2",
